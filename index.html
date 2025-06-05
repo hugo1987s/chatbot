@@ -2,16 +2,31 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Chatbot</title>
+  <title>Chatbot Voiceflow</title>
   <style>
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
+      height: 100vh;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Burbuja flotante del chatbot */
+    #chatbot-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
     }
   </style>
 </head>
 <body>
+
+  <!-- Contenedor para el chatbot -->
+  <div id="chatbot-container"></div>
+
+  <!-- Script de Voiceflow -->
   <script type="text/javascript">
     (function(d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -30,5 +45,6 @@
       s.parentNode.insertBefore(v, s);
     })(document, 'script');
   </script>
+
 </body>
 </html>
